@@ -1,0 +1,18 @@
+5
+##end
+#end
+##end 
+end 3 3
+4 4 4
+#comment
+5 5 5
+#comment
+6 6 6
+##start
+start 8 8
+7 7 7
+start-7
+7-6
+6-5
+5-4
+4-end
