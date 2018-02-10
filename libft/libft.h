@@ -38,7 +38,6 @@
 
 # define INFRM(z) (!SPEC_PER(z) && !FL_MODIF(z) && !FLAGS_SIZE(z) && z != '\0')
 
-
 typedef	struct		s_list
 {
 	void			*content;
@@ -159,7 +158,8 @@ void				ft_undigit(va_list ap, t_struct *flags);
 void				ft_un_big_digit(va_list ap, t_struct *flags);
 void				ft_print_x(va_list ap, t_struct *flags, char format);
 void				ft_print_o(va_list ap, t_struct *flags, char format);
-void				ft_take_unsigned_xo(uint64_t *b, va_list ap, t_struct *flags);
+void				ft_take_unsigned_xo(uint64_t *b, va_list ap,
+										t_struct *flags);
 void				ft_presizion_memory(t_struct *flags, char **a, uint64_t b);
 char				*ft_print_octet(int *tmp, int index);
 void				ft_toapper_if_x(char **a, char x);
@@ -171,7 +171,8 @@ void				ft_defolt_struct(t_struct *flags);
 void				ft_print_argument(char format, va_list ap, t_struct *flags);
 int					ft_read_nbsize_flags(char *format, t_struct *flags);
 void				ft_start_read(char *format, va_list ap, t_struct *flags);
-int					ft_read_spec_start(char *format, va_list ap, t_struct *flags);
+int					ft_read_spec_start(char *format, va_list ap,
+										t_struct *flags);
 int					ft_read_spec(char *format, t_struct *flags, int index);
 int					ft_wr_fls(char mod, t_struct *flags);
 int					ft_printf(const char *format, ...);

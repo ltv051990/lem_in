@@ -31,8 +31,6 @@ CFILES = ft_memcmp.c ft_strcmp.c ft_strncmp.c ft_isalpha.c ft_isdigit.c \
 
 OFILES = $(CFILES:.c=.o)
 
-FLAGS = -Wall -Wextra -Werror
-
 all: $(NAME)
 
 %.o: %.c

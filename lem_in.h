@@ -13,7 +13,6 @@
 #ifndef LEM_IN_H
 
 # define LEM_IN_H
-# include <stdio.h> // don't forget to delete
 # include "libft/libft.h"
 # include <fcntl.h>
 
